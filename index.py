@@ -16,9 +16,9 @@ def home():
             weather = [{'city':response_json['name'], 'country':response_json['sys']['country'], 'description':response_json['weather'][0]['description'], 'temp':response_json['main']['temp'], 'humidity':response_json['main']['humidity'], 'speed_wind':response_json['wind']['speed']}]
         else:
             weather = ""
-        return render_template("home.html", weather=weather)
+        return render_template("index.html", weather=weather)
     
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.errorhandler(404)
 def not_found(e):
