@@ -6,6 +6,6 @@ En este proyecto puedes consultar el estado del clima de las diferentes ciudades
 
 No olvides instalar las dependencias del proyecto:
 
-### `pip install flask requests`
+### `pip install -r requirements.txt`
 
 Para poder modificar y correr de forma local.
